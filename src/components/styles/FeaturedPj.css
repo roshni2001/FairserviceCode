@@ -1,0 +1,39 @@
+.featPj,.featPjRight {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+.featPjRight{
+    /* margin-top: 5%; */
+    flex-direction: row-reverse;
+    /* margin-right: 2%; */
+}
+  .pjVid {
+    flex: 2;
+    overflow: hidden; /* Ensure video does not overflow its container */
+    /* margin-left: 2%; */
+  }
+  
+  .pjVid video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    /* border-radius: 25px; */
+    /* border: 5px solid #fff; */
+  }
+  
+  .pjDescp {
+    flex: 1;
+    padding: 0 20px; /* Add padding to the content for better spacing */
+    box-sizing: border-box; /* Include padding in total width */
+    font-family: 'Sarabun', sans-serif;
+  }
+
+  @media(max-width:767px){
+    .featPj {
+        flex-direction: column;
+    }
+    .featPjRight{
+        flex-direction: column;
+    }
+  }

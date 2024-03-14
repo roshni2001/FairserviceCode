@@ -1,0 +1,65 @@
+/* ContactForm.css */
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto 2% auto;
+    background-color: #171622;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../images/contactBg.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    border-radius: 25px;
+    border: 3px solid var(--color-primary);
+    /* box-shadow: 0 0 6px rgba(183, 0, 255, 0.8), 0 0 20px rgba(162, 0, 255, 0.6), 0 0 30px rgba(212, 0, 255, 0.4); */
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #1f1d2e;
+    outline: none;
+    border: 1px solid rgb(43, 3, 53);
+    resize: none;
+    border-radius: 5px;
+    color: white;
+  }
+  input:focus,
+textarea:focus {
+  border: 1px solid var(--color-primary); /* Set the border color when the input is in focus */
+}
+
+.SendBtn{
+    background-color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+   
+}
+.SendBtn:hover{
+    /* opacity: 0.5; */
+    color: white;
+    text-shadow: 0 0 10px rgba(183, 0, 255, 0.8), 0 0 20px rgba(162, 0, 255, 0.6), 0 0 30px rgba(212, 0, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+    background-color: #100f19;
+    box-shadow: 0 0 6px rgba(183, 0, 255, 0.8), 0 0 20px rgba(162, 0, 255, 0.6), 0 0 30px rgba(212, 0, 255, 0.4);
+}
+.contactFormHead{
+  color: white;
+  margin-bottom: 10%;
+  text-align: center;
+ 
+  transition: text-shadow 0.3s ease-in-out;
+}
+@media(max-width:768px){
+    .contact-form {
+        max-width: 300px;
+        margin: 0 auto 2% auto;
+        background-color: #100f19;
+        padding: 10%;
+        border-radius: 15px;
+      }
+}
+  

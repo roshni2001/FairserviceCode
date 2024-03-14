@@ -1,0 +1,40 @@
+.blogCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blogCard{
+    background-color: #fff;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    width: 80%;
+}
+.blogCard p{
+text-align: justify;
+}
+.blogCard button{
+    background-color: var(--color-primary);
+    padding: 1%;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 5px;
+}
+.blogCard button:hover{
+    opacity: 0.8;
+}
+@media(max-width:768px){
+    .blogCard{
+       
+        margin: 1%;
+        padding: 5%;
+       
+    }
+    .blogCard h1{
+        font-size:1.15rem ;
+    }
+    .blogCard button{
+        padding: 2%;
+    }
+}

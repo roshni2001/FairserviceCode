@@ -1,0 +1,236 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* margin-left: 310px; */
+}
+
+.navbar-toggler-icon::before {
+  content: "\2630";
+  display: none;
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li::after
+  {
+    content: '';
+    width: 0%;
+    height: 2px;
+    /* background-color: rgb(75, 149, 233); */
+    background-color: var(--color-primary);
+    display: block;
+    margin:2px auto;
+    transition: 1s;
+    
+  }
+  nav ul li:hover::after
+  {
+    width: 100%;
+  }
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.show {
+  display: none;
+}
+li a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+/* li a:hover {
+  opacity: 0.5;
+} */
+li a.active{
+  color: var(--color-primary);
+}
+
+.navbar-nav ul li a.active {
+  color: rgb(211, 97, 240); /* Change this to the color you want for the active link */
+}
+
+ul li {
+  list-style: none;
+}
+/* Hide the dropdown initially */
+.nav-item ul {
+  display: none;
+  /* margin-left: -24%; */
+  position: absolute;
+  
+  background: var(--color-primary);
+  padding: 1%;
+  /* border-radius: 5%; */
+  z-index: 1;
+}
+/* Show the dropdown on hover */
+.nav-item:hover ul {
+  display: block;
+}
+/* Hide ul.GD initially */
+.nav-item .GD {
+  display: none;
+}
+
+/* Show ul.GD when hovering over the "Graphic Design" list item */
+.nav-item:hover .GD, .nav-item:hover .SE,.nav-item:hover .MS,.nav-item:hover .VE,.nav-item:hover .WD,.nav-item:hover .WS{
+  
+  margin-top: -2%;
+  position: fixed;
+  border: 1px solid white;
+  z-index: 100;
+}
+.nav-item:hover .GD {
+  display: none;
+  margin-left: -17%;
+}
+
+.GDList:hover .GD{
+  display: block;
+}
+.nav-item:hover .SE {
+  display: none;
+  margin-left: -20%;
+ 
+}
+.SEList:hover .SE{
+  display: block;
+}
+.nav-item:hover .MS {
+  display: none;
+  margin-left: -26%;
+ 
+}
+.MSList:hover .MS{
+  display: block;
+}
+.nav-item:hover .VE {
+  display: none;
+  margin-left: -13%;
+ 
+}
+.VEList:hover .VE{
+  display: block;
+}
+.nav-item:hover .WD {
+  display: none;
+  margin-left: -21%;
+ 
+}
+.WDList:hover .WD{
+  display: block;
+}.nav-item:hover .WS {
+  display: none;
+  margin-left: -14%;
+ 
+}
+.WSList:hover .WS{
+  display: block;
+}
+
+.nav-item ul li{
+  border-bottom: 1px solid #e3a1ff;
+  width: 100%;
+}
+.nav-item ul li a{
+  color: #fff;
+}
+.nav-item ul li a:hover{
+  color: #e3a1ff;
+}
+@media (max-width: 1100px){
+  .navbar-toggler-icon::before {
+    display: block;
+  }
+  ul li{
+    padding: 1rem;
+  }
+  li a:hover {
+    opacity: 0.5;
+  }
+  .show {
+    display: flex;
+    padding: 4%;
+  }
+  li a:hover {
+    color: #000;
+  }
+  .show li a.active {
+    color: #000; /* Change this to the color you want for the active link */
+  }
+  .navbar-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler-icon::before {
+    display: block;
+  }
+  ul li{
+    padding: 1rem;
+  }
+  li a:hover {
+    opacity: 0.5;
+  }
+  .show {
+    display: flex;
+    padding: 4%;
+  }
+  li a:hover {
+    color: #000;
+  }
+  .show li a.active {
+    color: #000; /* Change this to the color you want for the active link */
+  }
+  .navbar-nav {
+    display: none;
+  }
+}
+@media(max-width:500px){
+  .navbar-toggler{
+    margin-left: 0;
+  }
+}

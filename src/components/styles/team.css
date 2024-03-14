@@ -1,0 +1,58 @@
+.team{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+.team_member{
+    margin-left: 1%;
+    overflow: hidden; /* This ensures that the image won't overflow its container */
+}
+.team_member img {
+    width: 250px; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* This property specifies how the image should be resized to fit its container while maintaining its aspect ratio */
+    display: block;
+    border-radius: 25px;
+}
+.mem_name{
+    text-align: center;
+    font-weight: 600;
+}
+.mem_desg{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.viewteambtn{
+    background-color: var(--color-primary);
+    padding: 1%;
+    border: 1px solid white;
+    margin-bottom: 2%;
+    
+   
+}
+.viewteambtn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.viewteambtn:hover >a{
+    color:var(--color-primary);
+    font-weight: bold;
+}
+.viewteambtn:hover{
+    background-color: white;
+}
+  
+@media(max-width:767px){
+    .team{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:468px){
+    .viewteambtn{
+        padding: 2%;
+    }
+}

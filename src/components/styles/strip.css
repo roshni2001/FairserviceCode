@@ -1,0 +1,36 @@
+.strip {
+  background-color: var(--color-primary);
+  color: #000;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  /* border: 10px solid #7C3D97; */
+  margin-bottom: 0.5%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.stripcontent {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  animation: stripanimate 15s linear infinite;
+}
+
+@media(max-width:767px){
+  .stripcontent{
+    font-size: 1rem;
+  }
+}
+
+@keyframes stripanimate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

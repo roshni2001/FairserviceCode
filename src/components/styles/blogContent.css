@@ -1,0 +1,70 @@
+.ContentContainer{
+    background-color: #fff;
+    padding: 5%;
+    width: 80%;
+    text-align: justify;
+    margin:5% auto;
+    border-radius: 25px;
+    
+}
+.ContentContainer p{
+    line-height: 25px;
+    font-size: 1.15rem;
+}
+.addComment{
+    background-color: #fff;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    border-radius: 25px;
+}
+.addComment button{
+
+ background-color: var(--color-primary);
+    padding: 1%;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 5px;
+}
+.addComment button:hover{
+    opacity: 0.8;
+}
+.addComment textarea{
+    background-color: rgb(248, 219, 253);
+    border: 1px solid rgb(245, 200, 253);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.RetrievedCommentsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RetrievedComments{
+    background-color: #fff;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    border-radius: 25px;
+}
+.RetrievedComments h2{
+    color: var(--color-primary);
+}
+.comHead{
+    text-align: center;
+    margin-bottom: -1%;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+@media(max-width:767px){
+    .ContentContainer p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .addComment, .RetrievedComments{
+        padding: 5%;
+    }
+    .addComment button{
+        padding: 2%;
+    }
+}

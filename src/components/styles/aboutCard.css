@@ -1,0 +1,65 @@
+.aboutCard img{
+    object-fit: cover;
+    /* border-radius: 50%; */
+    width: 64px;
+    height: 64px;
+}
+.aboutCard{
+    padding: 3%;
+}
+.card-container{
+    margin-bottom: 5%;
+} 
+.aboutCard {
+  background-color: var(--color-primary); /* Background color change on hover */
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 1%;
+  /* transition: transform 0.3s, background-color 0.3s; */
+}
+.aboutCard:hover {
+  box-shadow: 0 0 6px rgba(183, 0, 255, 0.8), 0 0 10px rgba(162, 0, 255, 0.6), 0 0 10px rgba(212, 0, 255, 0.4);
+  /* transform: scale(1.05); Zoom effect on hover */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color:var(--color-primary);
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* cursor: pointer; */
+  }
+  
+ 
+  .CapibilitiesCard img{
+    object-fit: cover;
+    /* border-radius: 50%; */
+    width: 64px;
+    height: 64px;
+}
+  .CapibilitiesCard{
+    padding: 4%;
+    text-align: left;
+    /* flex: 0 0 12%; */
+    flex-wrap: nowrap;
+    background-color: var(--color-primary);
+    color: #fff;
+      }
+
+
+      
+      .card-list{
+          margin-left: -17%;
+          
+      }
+      .card-list li{
+        padding: 2%;
+      }
+      @media(max-width:767px){
+        .CapibilitiesCard{
+            flex-wrap: wrap;
+            /* flex: 0 0 65%; */
+        }
+        .card-list{
+          margin-left: -15%;
+          
+      }
+    }

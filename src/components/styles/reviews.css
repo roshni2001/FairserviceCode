@@ -1,0 +1,42 @@
+/* reviews.css */
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.review-card {
+  position: relative; /* Make the card position relative */
+  flex: 0 0 calc(33.33% - 20px); /* Set the width of each card for 3 cards per row and adjust margin */
+  margin: 10px; /* Adjust margin between cards as needed */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  background-color: white;
+}
+
+.review-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.readmorelink {
+  position: absolute; /* Make the link position absolute */
+  bottom: 2px; /* Adjust as needed */
+  left: 50%; /* Position in the middle horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  /* background-color: white; Make sure link is visible */
+  padding: 5px 10px; /* Add padding for better appearance */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); Optional: Add shadow for better visibility */
+}
+
+@media(max-width:768px){
+  .reviews-container{
+      flex-direction: column;
+  }
+  .review-card {
+      flex: 0 0 calc(100% - 20px); /* Set the width to 100% for smaller screens */
+  }
+}

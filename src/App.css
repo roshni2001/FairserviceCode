@@ -1,0 +1,31 @@
+/* Include Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300&display=swap');
+:root{
+    --color-primary:#7C3D97;
+    
+}
+*{
+    font-family: 'Sarabun', sans-serif;
+   
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,var(--color-primary),#000);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+    background: #474747;
+}
+
+/* styles.css */
+
+body {
+    
+   
+    background: linear-gradient(to right, #e7c2f7, #fff);
+    /* Replace the colors with your desired gradient stops */
+  }
+  

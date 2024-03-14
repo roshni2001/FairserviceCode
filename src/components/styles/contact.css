@@ -1,0 +1,29 @@
+
+.contact
+{
+    margin: 100px auto;
+    width: 80%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); */
+    background-position: center;
+    /* filter: brightness(0.5); */
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  
+}
+.contactButn{
+    padding: 10px 25px;
+    background-color: #fff;
+    color:var(--color-primary);
+    font-weight: 600;
+}
+.contactButn:hover{
+    background-color: var(--color-primary);
+    color: #fff;
+}
